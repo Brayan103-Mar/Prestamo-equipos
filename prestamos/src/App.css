@@ -392,3 +392,36 @@
   background: #dbe5d3;
   color: var(--verde-oscuro);
 }
+/* DISEÑO PARA COMPUTADORAS (Por defecto) */
+.app-container {
+  display: flex;
+  flex-direction: row; /* Menú a la izquierda, contenido a la derecha */
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.contenido {
+  flex: 1;
+  padding: 20px;
+}
+
+/* DISEÑO RESPONSIVO PARA CELULARES Y TABLETS (Pantallas menores a 768px) */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column; /* En celular el menú pasa arriba y el contenido abajo */
+  }
+
+  .sidebar {
+    width: 100%; /* El menú abarca todo el ancho del celular */
+    height: auto;
+  }
+
+  .contenido {
+    width: 100%;
+    padding: 10px;
+  }
+}
