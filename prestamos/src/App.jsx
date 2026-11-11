@@ -10,7 +10,7 @@ import Prestamos from './Prestamos'
 import Incidencias from './Incidencias'
 
 const secciones = [
-  { ruta: '/', nombre: 'Inicio', texto: 'Resumen general del sistema de préstamo de equipos de cómputo.' },
+  { ruta: '/', nombre: 'Inicio', texto: 'Sistema general de préstamo de equipos de cómputo ,Bienvenido usuario, recordar que el préstamo de equipo se hace desde un día antes para tener su solicitud.' },
   { ruta: '/equipos', nombre: 'Equipos', texto: 'Aquí se registrarán y consultarán los equipos de cómputo.' },
   { ruta: '/solicitudes', nombre: 'Solicitudes', texto: 'Aquí se registrarán las solicitudes de préstamo.' },
   { ruta: '/prestamos', nombre: 'Préstamos', texto: 'Aquí se controlarán los préstamos y las devoluciones.' },
