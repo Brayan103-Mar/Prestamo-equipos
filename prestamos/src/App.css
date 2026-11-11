@@ -409,3 +409,36 @@
   padding: 20px;
 }
 
+/* DISEÑO PARA COMPUTADORAS (Por defecto: Menú a la izquierda, contenido a la derecha) */
+.app-container {
+  display: flex;
+  flex-direction: row !important;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.contenido {
+  flex: 1;
+  padding: 20px;
+}
+
+/* DISEÑO RESPONSIVO PARA CELULARES Y TABLETS (Pantallas menores a 768px) */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column !important;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenido {
+    width: 100%;
+    padding: 10px;
+  }
+}
