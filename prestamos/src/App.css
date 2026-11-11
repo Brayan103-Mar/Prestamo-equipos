@@ -392,3 +392,33 @@
   background: #dbe5d3;
   color: var(--verde-oscuro);
 }
+/* 1. DISEÑO PARA COMPUTADORAS (Por defecto: lado a lado) */
+.app-container, .layout-principal { /* Usa el nombre de la clase contenedora de tu app */
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 260px;
+}
+
+.contenido {
+  flex: 1;
+}
+
+/* 2. DISEÑO PARA CELULARES Y TABLETS (Pantallas menores a 768px) */
+@media (max-width: 768px) {
+  .app-container, .layout-principal {
+    flex-direction: column; /* Cambia a columna: el menú queda arriba y el contenido abajo */
+  }
+
+  .sidebar {
+    width: 100%; /* El menú abarca todo el ancho de la pantalla del celular */
+    height: auto;
+  }
+
+  .contenido {
+    width: 100%;
+    padding: 15px;
+  }
+}
